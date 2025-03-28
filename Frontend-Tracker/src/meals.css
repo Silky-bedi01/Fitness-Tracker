@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+/* Meal Form */
+.meal-form {
+    display: flex;
+    flex-grow: 1; 
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Meal Input */
+.meal-form input,
+.meal-form select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Add Button */
+.add-btn {
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.05);
+}
+
+/* Meal History */
+.meal-history {
+    background-color: rgb(255, 235, 215);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 92%;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+/* Meal Item */
+.meal-item {
+    background-color: #fffbf5;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Water Section */
+.water-section {
+    background-color: #eaf2ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* Water Control */
+.water-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Water Input */
+.water-control input {
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 70%;
+}
+
+/* Water History */
+.water-history {
+    background-color: rgb(255, 235, 215);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 92%; 
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+/* Water Item */
+.water-item {
+    background-color: #fffbf5;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Meal Section */
+.meal-section {
+    background-color: #eaf2ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height:fit-content;
+    /* max-height: 700px; */
+    /* margin-right: 30px; */
+}
+
+/* Water Section */
+.water-section {
+    background-color: #eaf2ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: fit-content;
+    /* min-height: 500px; */
+    /* margin-top: 25%; */
+    /* margin-right: 5%; */
+}
+
+/* Ensure Form Input and Suggestions Align */
+.meal-form {
+    position: relative; 
+}
+
+/* Suggestions Dropdown Container */
+.suggestions-dropdown {
+    position: absolute; 
+    width: 30%; /* Matches input width */
+    max-height: 200px; /* Fixed height */
+    overflow-y: auto; /* Scrollable */
+    border: 1px solid #ccc;
+    border-top: none; /* Avoid double border */
+    background-color: #fff;
+    z-index: 10; /* Keep dropdown on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+/* Individual Suggestion Item */
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover Effect */
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Meal History */
+.meal-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    gap: 10px; /* Spacing between icon and content */
+}
+
+.meal-icon {
+    font-size: 24px; /* Slightly larger icon */
+    color: #ff7f50; /* Coral color */
+}
+
+.meal-name {
+    font-size: 16px; /* Main meal name - larger */
+    font-weight: bold;
+    margin: 0;
+}
+
+.meal-details {
+    font-size: 12px; /* Smaller macro details */
+    color: #666; /* Grey tone for subtleness */
+}
+
+.meal-timestamp {
+    font-size: 12px; /* Smaller timestamp */
+    color: #999; /* Light grey tone */
+    margin-left: auto; /* Push timestamp to the right */
+}
+.section-title {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+/* Date Picker Container */
+.date-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 12px;
+}
+
+.date-picker-container-m {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 12px;
+}
+
+/* Date Input Styling */
+.custom-date-picker {
+    appearance: none; /* Removes default styling */
+    border: 2px solid #007BFF; /* Green border */
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+/* Hover and Focus States */
+.custom-date-picker:hover,
+.custom-date-picker:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    background: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+    background: #0056b3;
+}
+
+/* Optional: Disable Next Button if Today's Date */
+.nav-btn:disabled {
+    background: #ccc; 
+    /* cursor: not-allowed; */
+}
+.small-left {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.toggle-container-m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.toggle-container-m .active {
+    font-weight: bold;
+    color: #0056b3;
+}

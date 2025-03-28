@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* ========== GENERAL STYLING ========== */
+
+
+/* ========== MAIN CONTAINER ========== */
+.main-container {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/* ========== WORKOUT TITLE ========== */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* ========== WORKOUT CONTAINER ========== */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+/* ========== LEFT FORM SECTION ========== */
+.workout-form {
+    background-color: #eaf2ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 37%;
+    /* max-width: 700px; */
+}
+
+.workout-form h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* Labels */
+.workout-form label {
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
+
+/* Inputs & Textarea */
+.workout-form input,
+.workout-form select,
+.workout-form textarea {
+    width: 97%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Scrollable Dropdown */
+.dropdown {
+    background-color: white;
+    cursor: pointer;
+    max-height: 50px; 
+    overflow-y: scroll ;
+}
+
+/* Two-Column Row */
+.row1 {
+    display: flex;
+    margin-right: 20px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Half-Width Inputs */
+.input-group {
+    flex: 1;
+}
+
+/* Radio Buttons for Intensity */
+.intensity-options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.intensity-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 5px; /* Add this line */
+    text-align: center; /* Add this line */
+}
+
+/* Submit Button */
+.add-workout-btn {
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.add-workout-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.05);
+}
+
+/* ========== RIGHT WORKOUT HISTORY ========== */
+.workout-history {
+    background-color: rgb(255, 235, 215);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: fit-content;
+    max-height: 600px;
+    overflow-y: scroll;
+    /* max-width: 700px; */
+}
+
+.workout-history h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Workout Cards */
+.workout-item {
+    background-color: #fffbf5;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+}
+
+/* Workout Headers */
+.workout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Workout Title */
+.workout-header h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* justify-content: space-between; */
+    min-width: 180px;
+}
+
+/* Icons for Workout */
+.workout-icon {
+    font-size: 20px;
+}
+
+/* Workout Details */
+.workout-details {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+/* Notes Tooltip (Displayed on Hover) */
+.workout-item:hover::after {
+    content: attr(data-notes); /* Display the notes */
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.workout-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workout-form, .workout-history {
+        max-width: 100%;
+    }
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.delete-icon{
+    display: none;
+    justify-self: right;
+
+}
+.delete-icon:hover{
+    color: red;
+    block-size: 30px;
+}
+.w-item{
+    display:flex;
+    width:100%;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1px;
+}
+.w-item:hover{
+    .delete-icon{
+        display: flex;
+    }
+}
+.workout-history {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.toggle-container .active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.toggle-switch {
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+.toggle-slider {
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    transition: all 0.3s;
+}
+
+.toggle-slider.left {
+    left: 2.5px;
+    background: #007BFF;
+}
+
+.toggle-slider.right {
+    right: 2.5px;
+    background: #0056b3;
+}
+
+
+.custom-date-picker {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.nav-btn :disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+.today-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition:  0.3s;
+    margin-left: auto;
+}
+
+.today-btn:hover {
+    background-color: #0056b3;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+        gap: 20px;
+    margin-bottom: 15px;
+}

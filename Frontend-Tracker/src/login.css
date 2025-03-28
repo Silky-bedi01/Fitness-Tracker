@@ -1,0 +1,148 @@
+
+.login-page {
+    /* Styles for the login page background */
+    background-image: url("/bg.png"); /* Adjust path as needed */
+    background-size: cover;  /* Ensures the image covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh; /* Ensures the body takes the full viewport height */
+    width: 100vw; /* Ensures the body takes the full viewport width */
+    margin: 0; /* Removes default margin */
+    overflow: hidden; /* Prevents scrolling if not needed */
+  }
+
+/* Center the form in the middle of the screen */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: fit-content;
+    background: linear-gradient(135deg, #e0eafc, #c6c6c7);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    color: #2c3e50;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.details {
+    display: block;
+    text-align: left;
+    width: 80%;
+    max-width: 380px;
+    margin: 10px auto;
+    color: #34495e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.processing {
+    display: block;
+    width: 80%;
+    max-width: 380px;
+    margin: 10px auto;
+    color: #34495e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.message {
+    display: block;
+    width: 80%;
+    max-width: 380px;
+    margin: 10px auto;
+    color: #f64b3f;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+/* Style for input fields */
+.field {
+    width: 90%;
+    height: 25px;
+    max-width: 380px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #bdc3c7;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    color: #2c3e50;
+}
+
+/* Focus effect */
+.field:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Placeholder styling */
+.field::placeholder {
+    color: #95a5a6;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+/* Reduce placeholder opacity on focus */
+.field:focus::placeholder {
+    opacity: 0.5;
+}
+
+/* Button styling */
+.button {
+    width: 100%;
+    height: 40px;
+    width: fit-content;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.button:hover {
+    background: #2980b9;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Button focus effect */
+.button:focus {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.6);
+}
+
+/* "or" text styling */
+#or {
+    font-size: 15px;
+    color: #555;
+    margin: 10px 0;
+}
+.signIn {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+  }
+  
+  .signIn:hover {
+    color: darkblue;
+  }
+  
