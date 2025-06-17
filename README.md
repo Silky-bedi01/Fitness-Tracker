@@ -45,7 +45,7 @@ FitTrack is a full-stack AI-powered fitness tracker web application that helps u
 git clone https://github.com/Silky-bedi01/Fitness-Tracker.git
 
 Backend Setup
-cd backend
+cd Backend-Tracker
 ./mvnw install
 ./mvnw spring-boot:run
 Configure PostgreSQL credentials in application.properties
@@ -53,7 +53,7 @@ Configure PostgreSQL credentials in application.properties
 API docs available at http://localhost:8080/swagger-ui.html
 
 Frontend Setup
-cd frontend
+cd Frontend-Tracker
 npm install
 npm start
 
